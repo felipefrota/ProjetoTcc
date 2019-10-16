@@ -1,5 +1,4 @@
 <header>
-
     <!----------------------------------------------------------------------------------------->
     <!--<object type="text/html" data="../nav-bar.html"></object>-->
     <div id="Nav-Bar">
@@ -11,8 +10,7 @@
                         Logo Site
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuCelular"
-                        aria-controls="menu" aria-expanded="false" aria-label="Menu Colapso">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuCelular" aria-controls="menu" aria-expanded="false" aria-label="Menu Colapso">
                         <span class="navbar-toggler-icon text-black"></span>
                     </button>
                 </div>
@@ -20,32 +18,27 @@
                 <div id="menuCelular" class="collapse navbar-collapse">
 
                     <ul class="navbar-nav ml-auto text-light nav-menu">
-                        <li class="navbar-text"><a class="nav-link text-black-50 font-weight-bold"
-                                href="#">Home</a></li>
-                        <li class="navbar-text" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold"
-                                [routerLink]="['/events']">Eventos</a></li>
-                        <li class="navbar-text navHistorias" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold"
-                                [routerLink]="['/history']">Historia</a></li>
-                        <li class="navbar-text nav-instituicoes"><a class="nav-link text-black-50 font-weight-bold"
-                                href="#">Instituições</a></li>
+                        <li class="navbar-text"><a class="nav-link text-black-50 font-weight-bold" href="#">Home</a></li>
+                        <li class="navbar-text" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold" [routerLink]="['/events']">Eventos</a></li>
+                        <li class="navbar-text navHistorias" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold" [routerLink]="['/history']">Historia</a></li>
+                        <li class="navbar-text nav-instituicoes" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold" [routerLink]="['/institutions']">Instituições</a></li>
+
+                        <!--Login-->
                         <li>
                             <a class="nav-link" href="#">
-                                <button type="button" class="btn btn-outline-success janelaLogin" data-toggle="modal"
-                                    data-target="#telaLogin">Login</button>
+                                <button type="button" class="btn btn-outline-success janelaLogin" data-toggle="modal" data-target="#telaLogin">Login</button>
                             </a>
 
 
                             <!--Mostrar Janela Login-->
                             <div class="container-fluid">
-                                <div class="modal fade" id="telaLogin" tabindex="-1" role="dialog" aria-labelledby=""
-                                    aria-hidden="true">
+                                <div class="modal fade" id="telaLogin" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="login">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title text-black-50" id="tituloTela">Faca seu Login
+                                                <h5 class="modal-title text-black-50" id="tituloTela">Faça seu Login
                                                 </h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Fechar">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -53,21 +46,18 @@
                                                 <form class="form-horizontal">
                                                     <div class="form-group row">
                                                         <div class="col-sm-10">
-                                                            <input class="form-control" type="text" id="login-email"
-                                                                placeholder="Login/Email:">
+                                                            <input class="form-control" type="text" id="login-email" placeholder="Login/Email:">
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col-sm-10">
-                                                            <input class="form-control" type="password" id="senha"
-                                                                placeholder="Senha:">
+                                                            <input class="form-control" type="password" id="senha" placeholder="Senha:">
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-info"
-                                                    data-dismiss="modal">Login</button>
+                                                <button type="button" class="btn btn-info" data-dismiss="modal">Login</button>
                                             </div>
                                         </div>
                                     </div>
@@ -80,8 +70,9 @@
                         </li>
 
                         <li>
-                            <a class="nav-link" href="../CadastroPessoas/RegistrationPeople.html">
-                                <button type="button" class="btn btn-outline-dark">Cadastre-se</button>
+                            <a class="nav-link">
+                                <button (click)="navigateToRegister()" type="button" class="btn btn-outline-info" routerLinkActive="active">Cadastre-se</button>
+
                             </a>
                         </li>
 
