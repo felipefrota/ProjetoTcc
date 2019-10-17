@@ -1,0 +1,120 @@
+{
+    "Empresas": [{
+            "id": "casa-nova",
+            "name": "Casa Nova",
+            "category": "Usuarios e Depressao",
+            "imagePath": "assets/Images/Adobe-AfterEffects-icon.png",
+            "hours": "Funciona de segunda a sexta, de 8h as 23h"
+        },
+        {
+            "id": "vida-nova",
+            "name": "Vida Nova",
+            "category": "Usuarios e Depressao",
+            "imagePath": "assets/Images/Adobe-Audition-icon.png",
+            "hours": "Funciona de segunda a segunda, de 8h as 23h"
+        },
+        {
+            "id": "belo-lar",
+            "name": "Belo Lar",
+            "category": "Usuarios e Depressao",
+            "imagePath": "assets/Images/Adobe-Bridge-icon.png",
+            "hours": "Funciona de segunda a sexta, de 8h as 23h"
+        },
+        {
+            "id": "casa-bela",
+            "name": "Cada Bela",
+            "category": "Usuarios e Depressao",
+            "imagePath": "assets/Images/Adobe-Dreamweaver-icon.png",
+            "hours": "Funciona de segunda a sexta, de 8h as 23h"
+        },
+        {
+            "id": "bela-vida",
+            "name": "Bela Vida",
+            "category": "Usuarios e Depressao",
+            "imagePath": "src/assets/Images/arvore.jpg",
+            "hours": "Funciona de segunda a sexta, de 8h as 23h"
+        },
+        {
+            "id": "new-life",
+            "name": "New Life",
+            "category": "Usuarios e Depressao",
+            "imagePath": "assets/Images/Adobe-Animate-icon.png",
+            "hours": "Funciona de segunda a sexta, de 8h as 23h"
+        }
+    ],
+    "usuarios": [{
+            "id": "user01",
+            "name": "Francisco Silva",
+            "age": "18",
+            "gender": "Masculino"
+        },
+        {
+            "id": "user02",
+            "name": "Ricardo Silva",
+            "age": "21",
+            "gender": "Masculino"
+        },
+        {
+            "id": "user03",
+            "name": "Livia Souza",
+            "age": "19",
+            "gender": "Feminino"
+        },
+        {
+            "id": "user04",
+            "name": "Bianca Andrade",
+            "age": "31",
+            "gender": "Feminino"
+        },
+        {
+            "id": "user05",
+            "name": "Stefani Silva",
+            "age": "21",
+            "gender": "Feminino"
+        },
+        {
+            "id": "user06",
+            "name": "Thiago Bruno",
+            "age": "44",
+            "gender": "Masculino"
+        }
+    ],
+    "pacient-name": [{
+            "id": "pacient01",
+            "name": "Joao Claudio",
+            "age": "25",
+            "gender": "Masculino"
+        },
+        {
+            "id": "pacient02",
+            "name": "Rita Claudia",
+            "age": "36",
+            "gender": "Feminino"
+        },
+        {
+            "id": "pacient03",
+            "name": "Ana Claudia",
+            "age": "45",
+            "gender": "Feminino"
+        },
+        {
+            "id": "pacient04",
+            "name": "Thiago Henrique",
+            "age": "25",
+            "gender": "Masculino"
+        },
+        {
+            "id": "pacient05",
+            "name": "Joao Silva",
+            "age": "22",
+            "gender": "Masculino"
+        },
+        {
+            "id": "pacient06",
+            "name": "José Ricardo",
+            "age": "55",
+            "gender": "Masculino"
+        }
+    ],
+    "orders": []
+}

@@ -13,6 +13,7 @@ import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './user/register/register.component';
 import { LoginComponent } from './user/login/login.component';
 import { InstitutionComponent } from './institutions/institution/institution.component';
+import { InstitutionsService } from './institutions/institutions.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { InstitutionComponent } from './institutions/institution/institution.com
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [InstitutionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
