@@ -16,8 +16,14 @@
             <!--First slide-->
             <div class="carousel-item active">
 
-                <div class="col-md-3 mb-3">
-                    <div class="card bg-light">
+                <div *ngFor="let institution of institutions" class="col-md-3 mb-3">
+
+                    <project-institution [institution]="institution"></project-institution>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card bg-light">
                         <img class="card-img-top img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Titulo Card</h5>
@@ -60,11 +66,11 @@
                     </div>
                 </div>
 
-            </div>
-            <!--/.First slide-->
+            </div> -->
+        <!--/.First slide-->
 
-            <!--Second slide-->
-            <div class="carousel-item">
+        <!--Second slide-->
+        <!-- <div class="carousel-item">
 
                 <div class="col-md-3 mb-3">
                     <div class="card bg-light">
@@ -107,12 +113,12 @@
                             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                             <a href="#" class="btn btn-primary">Visitar</a>
                         </div>
-                    </div>
-                </div>
+                    </div>  -->
+        <!-- </div>
 
-            </div>
-            <!--/.Second slide-->
-        </div>
+            </div> -->
+        <!--/.Second slide-->
+        <!-- </div> -->
 
         <!--Carousel-Controls-->
         <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">

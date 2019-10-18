@@ -1,50 +1,50 @@
 {
-    "Empresas": [
-        {
+    "allCompanies": [{
             "id": "casa-nova",
             "name": "Casa Nova",
             "category": "Usuarios e Depressao",
-            "imagePath": "assets/Images/Adobe-AfterEffects-icon.png",
+            "imagePath": "assets/Images/montanhas.jpg",
             "hours": "Funciona de segunda a sexta, de 8h as 23h"
         },
         {
             "id": "vida-nova",
             "name": "Vida Nova",
             "category": "Usuarios e Depressao",
-            "imagePath": "assets/Images/Adobe-Audition-icon.png",
+            "imagePath": "assets/Images/montanhas2.jpg",
             "hours": "Funciona de segunda a segunda, de 8h as 23h"
         },
         {
             "id": "belo-lar",
             "name": "Belo Lar",
             "category": "Usuarios e Depressao",
-            "imagePath": "assets/Images/Adobe-Bridge-icon.png",
+            "imagePath": "assets/Images/praia2.jpg",
             "hours": "Funciona de segunda a sexta, de 8h as 23h"
         },
         {
             "id": "casa-bela",
             "name": "Cada Bela",
             "category": "Usuarios e Depressao",
-            "imagePath": "assets/Images/Adobe-Dreamweaver-icon.png",
+            "imagePath": "assets/Images/praia3.jpg",
             "hours": "Funciona de segunda a sexta, de 8h as 23h"
         },
         {
             "id": "bela-vida",
             "name": "Bela Vida",
             "category": "Usuarios e Depressao",
-            "imagePath": "assets/Images/Adobe-Animate-icon.png",
+            "imagePath": "assets/Images/arvore.jpg",
             "hours": "Funciona de segunda a sexta, de 8h as 23h"
         },
         {
             "id": "new-life",
             "name": "New Life",
             "category": "Usuarios e Depressao",
-            "imagePath": "assets/Images/Adobe-Code-icon.png",
+            "imagePath": "assets/Images/praia.jpg",
             "hours": "Funciona de segunda a sexta, de 8h as 23h"
         }
     ],
-    "usuarios": [
-        {
+
+
+    "usuarios": [{
             "id": "user01",
             "name": "Francisco Silva",
             "age": "18",
@@ -81,8 +81,9 @@
             "gender": "Masculino"
         }
     ],
-    "pacient-name": [
-        {
+
+
+    "pacient-name": [{
             "id": "pacient01",
             "name": "Joao Claudio",
             "age": "25",
@@ -119,5 +120,7 @@
             "gender": "Masculino"
         }
     ],
+
+
     "orders": []
 }

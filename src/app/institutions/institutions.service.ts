@@ -12,6 +12,8 @@ export class InstitutionsService {
         constructor( private http: HttpClient){}
 
         institutions(): Observable<Institution[]> {
-            return this.http.get<Institution[]>(`${CONNECTION_API}/Empresas`);
-        } 
+            return this.http.get<Institution[]>(`${CONNECTION_API}/allCompanies`);
+            
+        }
     }
+

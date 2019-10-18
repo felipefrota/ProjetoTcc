@@ -8,6 +8,8 @@ import {Institution} from './institution.model'
 })
 export class InstitutionComponent implements OnInit {
 
+ 
+
   @Input() institution: Institution
 
   constructor() { }
