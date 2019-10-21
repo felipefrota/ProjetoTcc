@@ -14,6 +14,7 @@ import { RegisterComponent } from './user/register/register.component';
 import { LoginComponent } from './user/login/login.component';
 import { InstitutionComponent } from './institutions/institution/institution.component';
 import { InstitutionsService } from './institutions/institutions.service';
+import { InputValidationComponent } from './shared/input-validation/input-validation.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { InstitutionsService } from './institutions/institutions.service';
     UserComponent,
     RegisterComponent,
     LoginComponent,
-    InstitutionComponent
+    InstitutionComponent,
+    InputValidationComponent
   ],
   imports: [
     BrowserModule,
