@@ -19,13 +19,15 @@
 
                     <ul class="navbar-nav ml-auto text-light nav-menu">
                         <li class="navbar-text"><a class="nav-link text-black-50 font-weight-bold" href="#">Home</a></li>
-                        <li class="navbar-text" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold" [routerLink]="['/events']">Eventos</a></li>
                         <li class="navbar-text navHistorias" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold" [routerLink]="['/history']">Historia</a></li>
                         <li class="navbar-text nav-instituicoes" routerLinkActive="active"><a class="nav-link text-black-50 font-weight-bold" [routerLink]="['/institutions']">Instituições</a></li>
 
+                        <!------------------------------------------------------------------------------------------------------------->
+                        <!--Botao Login-->
+                        <!------------------------------------------------------------------------------------------------------------->
                         <!--Login-->
                         <li>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link">
                                 <button type="button" class="btn btn-outline-success janelaLogin" data-toggle="modal" data-target="#telaLogin">Login</button>
                             </a>
 
@@ -69,12 +71,32 @@
 
                         </li>
 
+                        <!------------------------------------------------------------------------------------------------------------->
+                        <!--Botao Cadastro-->
+                        <!------------------------------------------------------------------------------------------------------------->
                         <li>
-                            <a class="nav-link">
-                                <button (click)="navigateToRegister()" type="button" class="btn btn-outline-info" routerLinkActive="active">Cadastre-se</button>
+                            <div class="nav-link">
+                                <button type="button" class="btn btn-outline-info" data-toggle="dropdown" data-target="">Cadastro</button>
 
-                            </a>
+
+                                <form class="dropdown-menu p-3 dropdown-menu-right mr-5 ">
+                                    <div class="form-group">
+                                        <button (click)="navigateToRegistryResponsible()" type="button" class="btn btn-primary" routerLinkActive="active">Terceiros</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button (click)="navigateToRegister()" type="button" class="btn btn-info" routerLinkActive="active">Dependente</button>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <button (click)="navigateToInstitution()" type="button" class="btn btn-secondary" routerLinkActive="active">Instituição</button>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
                         </li>
+
 
 
                     </ul>

@@ -1,0 +1,92 @@
+<span class="d-block p-3 bg-primary text-white">Cadastro</span>
+<hr>
+<span class="d-block p-2 bg-dark text-white">Dados do Responsavel</span>
+<br/>
+
+
+<div class="container-fluid">
+
+    {{form.valid}} {{form.value | json}}
+
+
+    <form class="was-validated" #form="ngForm" novalidate>
+
+        <project-input-validation-container errorMessage="Campo Obrigatório e no minimo com 10 caracteres" label="Nome">
+            <label for="nome">Seu Nome</label>
+            <input class="form-control" name="nome" ngModel required minlength="10" autocomplete="off">
+        </project-input-validation-container>
+
+        <div class="form-group">
+            <project-input-validation-container errorMessage="Campo Obrigatório" label="Email">
+                <label for="email">Seu Email</label>
+                <input class="form-control" type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" ngModel placeholder="seuemail@email.com" autocomplete="off">
+            </project-input-validation-container>
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group col-md-3">
+                <project-input-validation-container errorMessage="Campo Obrigatório e somente numeros" label="Cpf">
+                    <label for="cpf">CPF</label>
+                    <input class="form-control" type="text" id="cpf" required minlength="11" pattern="^[0-9]*$" name="cpf" ngModel placeholder="000.000.000.00" autocomplete="off">
+                </project-input-validation-container>
+            </div>
+
+            <project-input-validation-container errorMessage="Campo Obrigatório" label="DataNascimento">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input class="form-control" id="dataNascimento" required name="dataNascimento" ngModel type="date" autocomplete="off">
+            </project-input-validation-container>
+            <div class="form-group col-md-3">
+            </div>
+
+
+            <div class="form-group col-md-3">
+                <project-input-validation-container errorMessage="Campo Obrigatório" label="Sexo">
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo" required name="sexo" ngModel class="form-control" autocomplete="off">
+                                  <option selected>Escolher...</option>
+                                  <option value="masc">Masculino</option>
+                                  <option value="fem">Feminino</option>
+                                  <option value="other">Outro...</option>
+                                </select>
+                </project-input-validation-container>
+            </div>
+
+            <div class="form-group col-md-3">
+                <project-input-validation-container errorMessage="Campo Obrigatório" label="EstadoCivil">
+                    <label for="estadoCivil">Estado Civil</label>
+                    <select class="form-control" id="estadoCivil" required name="estadoCivil" ngModel autocomplete="off">
+                                <option selected>Escolher...</option>
+                                <option value="solt">Solteiro(a)</option>
+                                <option value="casad">Casado(a)</option>
+                                <option value="divor">Divorciado(a)</option>
+                                <option value="viu">Viuvo(a)</option>
+                            </select>
+                </project-input-validation-container>
+            </div>
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <project-input-validation-container errorMessage="Campo Obrigatório e somente numeros" label="TelefoneCelular">
+                    <label for="telefoneCelular">Telefone Celular</label>
+                    <input class="form-control" type="tel" id="telefoneCelular" required minlength="10" pattern="^[0-9]*$" name="telefoneCelular" ngModel placeholder="EX: (ddd)90000-0000" autocomplete="off">
+                </project-input-validation-container>
+            </div>
+
+            <div class="form-group col-md-3">
+                <project-input-validation-container errorMessage="Somente numeros" label="">
+                    <label for="telefoneFixo">Telefone Fixo</label>
+                    <input class="form-control" type="tel" id="telefoneFixo" pattern="^[0-9]*$" name="telefoneFixo" ngModel placeholder="EX: (ddd)0000-0000" autocomplete="off">
+                </project-input-validation-container>
+            </div>
+        </div>
+
+
+        <button (click)="navigateToRegister()" type="button" class="btn btn-info" [disabled]="!form.valid">Proximo</button>
+
+    </form>
+
+</div>

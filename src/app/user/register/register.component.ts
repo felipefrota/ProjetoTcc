@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'project-register',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  navigateToRegistrationAddress(){
+    this.router.navigateByUrl('/registration-address')
+  }
 
   ngOnInit() {
   }

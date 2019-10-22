@@ -12,7 +12,7 @@ export class InputValidationComponent implements OnInit, AfterContentInit {
 
   input: any
 
-  @ContentChild(NgModel) model: NgModel
+  @ContentChild(NgModel, {static: false}) model: NgModel
 
   constructor() { }
 

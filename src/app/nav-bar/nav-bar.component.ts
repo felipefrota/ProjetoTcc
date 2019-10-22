@@ -9,9 +9,18 @@ export class NavBarComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  navigateToRegister(){
-    this.router.navigateByUrl('/register');
+  navigateToRegistryResponsible(){
+    this.router.navigateByUrl('/registry-responsible');
   }
+
+  navigateToRegister(){
+    this.router.navigateByUrl('/register')
+  }
+
+  navigateToInstitution(){
+    this.router.navigateByUrl('/institution-registration')
+  }
+
 
   ngOnInit() {
   }
