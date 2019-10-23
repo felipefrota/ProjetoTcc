@@ -90,7 +90,7 @@
             </project-input-validation-container>
         </div>
 
-        <button (click)="navigateToHome()" type="button" class="btn btn-info" [disabled]="!form.valid">Proximo</button>
+        <button (click)="checkOrder(form.value)" type="button" class="btn btn-info" [disabled]="!form.valid">Proximo</button>
 
 
     </form>

@@ -13,7 +13,12 @@ export class RegistrationAddressComponent implements OnInit {
     this.router.navigateByUrl(' ')
   }
 
+  checkOrder(order: any){
+   console.log(order) 
+  }
   ngOnInit() {
   }
+
+ 
 
 }

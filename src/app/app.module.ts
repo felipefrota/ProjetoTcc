@@ -18,6 +18,7 @@ import { InputValidationComponent } from './shared/input-validation/input-valida
 import { RegistryResponsibleComponent } from './user/registry-responsible/registry-responsible.component';
 import { InstitutionRegistrationComponent } from './user/institution-registration/institution-registration.component';
 import { RegistrationAddressComponent } from './user/registration-address/registration-address.component';
+import { WorkComponent } from './user/work/work.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { RegistrationAddressComponent } from './user/registration-address/regist
     InputValidationComponent,
     RegistryResponsibleComponent,
     InstitutionRegistrationComponent,
-    RegistrationAddressComponent
+    RegistrationAddressComponent,
+    WorkComponent,
   ],
   imports: [
     BrowserModule,
