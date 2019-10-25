@@ -13,6 +13,9 @@ export class RegisterComponent implements OnInit {
     this.router.navigateByUrl('/registration-address')
   }
 
+   checkOrder(order: any){
+   console.log(order) 
+  }
   ngOnInit() {
   }
 

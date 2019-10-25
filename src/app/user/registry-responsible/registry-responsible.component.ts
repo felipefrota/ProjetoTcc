@@ -13,6 +13,9 @@ export class RegistryResponsibleComponent implements OnInit {
     this.router.navigateByUrl('/register')
   }
 
+  checkOrder(order: any){
+    console.log(order) 
+   }
   ngOnInit() {
   }
 
